@@ -1,0 +1,24 @@
+$color-active: #C9A96E;
+.header {
+  padding: 34px 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .logo {
+    margin: 0;
+    color: $color-active;
+  }
+
+  &__board {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &-link {
+      padding-left: 1.5rem;
+      &:hover {
+        color: $color-active;
+      }
+    }
+  }
+}
