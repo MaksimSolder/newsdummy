@@ -2,12 +2,12 @@ import "./accordion.scss";
 import {getAllNews} from "@/app/api/news.api";
  const Accordion = async () => {
     const data = await getAllNews();
-    return (
+     return (
         <div>
-            {data.articles.map((el, index) => {
+            {data.articles.map((el:any, index: number) => {
                 if (index === 0) {
                     return (
-                        <div className="accordion" style={{backgroundImage: `url(${el.urlToImage})`}}>
+                        <div key={index} className="accordion" style={{backgroundImage: `url(${el.urlToImage})`}}>
                             <div className="accordion__textbox">
                                 <h1><a href={el.url}>{el.title}</a></h1>
                                 <h3>{el.description}</h3>

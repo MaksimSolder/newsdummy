@@ -11,4 +11,36 @@
     text-align: center;
     padding: 1rem;
   }
+
+  .categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: darkgray;
+    border-bottom: 1px solid darkgray;
+    padding: 1rem;
+    font-size: 1.25rem;
+    width: 100%;
+  }
+
+  .tags-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 0.25rem;
+
+    &-badge {
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      background: rgba(gray, 0.2);
+      color: gray;
+      margin: 0.25rem;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .filterdesk {
+    width: 100%;
+  }
 }

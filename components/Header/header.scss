@@ -22,3 +22,12 @@ $color-active: #C9A96E;
     }
   }
 }
+
+@media screen and (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    &__board {
+      flex-direction: column;
+    }
+  }
+}

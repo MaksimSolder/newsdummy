@@ -35,3 +35,15 @@
     color: darkgray;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
