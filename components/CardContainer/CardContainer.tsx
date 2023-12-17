@@ -6,7 +6,7 @@ const CardContainer = async () => {
     const data = await getAllNews();
     return (
         <div className="card-container">
-            {data.articles.map((el, index) => {
+            {data.articles.map((el:any, index: number) => {
                 const date = new Date(el.publishedAt);
                 return <Card
                     key={index}
